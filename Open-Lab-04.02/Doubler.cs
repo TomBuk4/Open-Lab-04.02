@@ -1,12 +1,14 @@
-﻿using System;
-
-namespace Open_Lab_04._02
 {
     public class Doubler
     {
         public string DoubleChar(string original)
         {
-            throw new NotImplementedException();
+            string modify = string.Empty;
+            for (int i = 0; i < original.Length; i++)
+            {
+                modify = modify + original[i] + original[i];
+            }
+            return modify;
         }
     }
 }
